@@ -33,7 +33,8 @@ GR_PYTHON_INSTALL(
     FILES
     __init__.py
     txpy.py
-    rxpy.py DESTINATION ${GR_PYTHON_DIR}/JT65
+    rxpy.py
+    strobesource.py DESTINATION ${GR_PYTHON_DIR}/JT65
 )
 
 ########################################################################
@@ -45,3 +46,4 @@ set(GR_TEST_TARGET_DEPS gnuradio-JT65)
 set(GR_TEST_PYTHON_DIRS ${CMAKE_BINARY_DIR}/swig)
 GR_ADD_TEST(qa_txpy ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_txpy.py)
 GR_ADD_TEST(qa_rxpy ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_rxpy.py)
+GR_ADD_TEST(qa_strobesource ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_strobesource.py)

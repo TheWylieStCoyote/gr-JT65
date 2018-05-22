@@ -20,5 +20,6 @@
 
 install(FILES
     JT65_txpy.xml
-    JT65_rxpy.xml DESTINATION share/gnuradio/grc/blocks
+    JT65_rxpy.xml
+    JT65_strobesource.xml DESTINATION share/gnuradio/grc/blocks
 )
