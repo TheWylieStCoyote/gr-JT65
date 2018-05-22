@@ -32,4 +32,5 @@ except ImportError:
 
 # import any pure python here
 from txpy import txpy
+from rxpy import rxpy
 #

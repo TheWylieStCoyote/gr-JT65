@@ -19,5 +19,6 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    JT65_txpy.xml DESTINATION share/gnuradio/grc/blocks
+    JT65_txpy.xml
+    JT65_rxpy.xml DESTINATION share/gnuradio/grc/blocks
 )
