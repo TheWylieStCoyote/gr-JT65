@@ -32,7 +32,7 @@ endif()
 GR_PYTHON_INSTALL(
     FILES
     __init__.py
-    DESTINATION ${GR_PYTHON_DIR}/JT65
+    txpy.py DESTINATION ${GR_PYTHON_DIR}/JT65
 )
 
 ########################################################################
@@ -42,3 +42,4 @@ include(GrTest)
 
 set(GR_TEST_TARGET_DEPS gnuradio-JT65)
 set(GR_TEST_PYTHON_DIRS ${CMAKE_BINARY_DIR}/swig)
+GR_ADD_TEST(qa_txpy ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_txpy.py)
