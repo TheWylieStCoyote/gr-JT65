@@ -34,4 +34,5 @@ except ImportError:
 from txpy import txpy
 from rxpy import rxpy
 from strobesource import strobesource
+from WSJTpassthrought import WSJTpassthrought
 #
